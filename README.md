@@ -57,7 +57,7 @@ You'll need a Google Gemini API key to power the travel intelligence engine. Get
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/aryanranade/horizon-dashboard.git
+   git clone https://github.com/aryanranade/horizon.git
    cd horizon
    ```
 
