@@ -8,7 +8,7 @@
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Google%20Gemini-%238E75B2.svg?style=for-the-badge&logo=google&logoColor=white)
 
-🟢 [**View Live Deployment**](#)
+🟢 [**View Live Deployment**](https://horizon-dashboard-tau.vercel.app/)
 
 A highly dynamic, single-page travel dashboard application designed for intelligent itinerary planning. This project parses user input to generate detailed multi-day travel plans, smart packing checklists, and comprehensive budget breakdowns. It was built to demonstrate proficiency in modern web development, emphasizing a premium glassmorphic UI, API integrations, and practical AI application through prompt engineering.
 
