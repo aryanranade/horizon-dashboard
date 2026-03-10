@@ -1,18 +1,18 @@
-<div align="center">
-  <h1 align="center">🌅 Horizon</h1>
-  <p align="center">
-    <strong>Discover your next adventure with AI-powered intelligence.</strong>
-    <br />
-    <br />
-    <a href="https://nextjs.org/">Next.js 15</a>
-    ·
-    <a href="https://tailwindcss.com/">Tailwind CSS V4</a>
-    ·
-    <a href="https://ai.google.dev/">Gemini AI 2.5</a>
-  </p>
-</div>
+# 🌅 Horizon
 
-<br/>
+---
+
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google%20Gemini-%238E75B2.svg?style=for-the-badge&logo=google&logoColor=white)
+
+🟢 [**View Live Deployment**](#)
+
+A highly dynamic, single-page travel dashboard application designed for intelligent itinerary planning. This project parses user input to generate detailed multi-day travel plans, smart packing checklists, and comprehensive budget breakdowns. It was built to demonstrate proficiency in modern web development, emphasizing a premium glassmorphic UI, API integrations, and practical AI application through prompt engineering.
+
+---
 
 ## 📸 Screenshots
 
@@ -34,7 +34,7 @@
 <img src="screenshots/budget-view.png" alt="Budget Breakdown and Packing List" width="100%">
 </details>
 
-<br/>
+---
 
 ## ✨ Features
 
@@ -45,14 +45,7 @@
 - **Premium Glassmorphic UI:** A stunning, modern interface with interactive elements, animated gradients, and seamless transitions.
 - **Downloadable Plans:** Export your complete travel itinerary and budget to a downloadable text file for offline use.
 
-## 🛠️ Tech Stack
-
-- **Framework:** [Next.js 15](https://nextjs.org/) (App Directory, Server Actions)
-- **Styling:** [Tailwind CSS V4](https://tailwindcss.com/)
-- **AI Engine:** [Google Gemini 2.5 Flash](https://ai.google.dev/)
-- **Weather API:** [Open-Meteo](https://open-meteo.com/)
-- **Icons:** [Lucide React](https://lucide.dev/)
-- **Fonts:** [Geist](https://vercel.com/font) & [Inter](https://fonts.google.com/specimen/Inter)
+---
 
 ## 🚀 Getting Started
 
@@ -64,7 +57,7 @@ You'll need a Google Gemini API key to power the travel intelligence engine. Get
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/horizon.git
+   git clone https://github.com/aryanranade/horizon-dashboard.git
    cd horizon
    ```
 
@@ -87,12 +80,16 @@ You'll need a Google Gemini API key to power the travel intelligence engine. Get
 5. **Open the app:**
    Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
 
+---
+
 ## 🎨 Design System
 
 Horizon features a custom design system built with vanilla CSS variables and Tailwind utility classes:
 - **`glass-card` & `glass-panel`**: Reusable semi-transparent surface components.
 - **Micro-animations**: Hover states include soft scaling, glows (`glow-pulse`), and gradient shimmers to keep the interface feeling alive.
 - **Color Palette**: Deep space background with cyan-to-indigo accent gradients.
+
+---
 
 ## 📄 License
 
