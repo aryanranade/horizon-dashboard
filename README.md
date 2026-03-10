@@ -91,6 +91,51 @@ Horizon features a custom design system built with vanilla CSS variables and Tai
 
 ---
 
-## 📄 License
+## 🏗️ System Architecture
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Horizon uses a modern, serverless architecture built on Next.js 15, separating the client-side presentation layer from the secure server-side AI processing.
+
+```mermaid
+graph TD
+    %% Styling
+    classDef client fill:#1E293B,stroke:#38BDF8,stroke-width:2px,color:#fff;
+    classDef server fill:#0F172A,stroke:#8B5CF6,stroke-width:2px,color:#fff;
+    classDef external fill:#020617,stroke:#10B981,stroke-width:2px,color:#fff;
+
+    %% Nodes
+    subgraph Client [Client-Side (React UI)]
+        UI[Glassmorphic Dashboard]:::client
+        State[React State & Hooks]:::client
+    end
+
+    subgraph Server [Server-Side (Next.js Actions)]
+        Action[actions.ts]:::server
+        Prompt[AI Prompt Engineering]:::server
+    end
+
+    subgraph External [External APIs]
+        Meteo[Open-Meteo API]:::external
+        Gemini[Google Gemini 2.5]:::external
+    end
+
+    %% Connections
+    UI -- "User Input (City, Days, Vibes)" --> State
+    State -- "Server Action Invocation" --> Action
+    
+    Action -- "1. Fetch Weather Data" --> Meteo
+    Meteo -- "Weather Context" --> Action
+    
+    Action -- "2. Compile Prompt" --> Prompt
+    Prompt -- "Generate Structured JSON" --> Gemini
+    Gemini -- "Raw JSON Response" --> Action
+    
+    Action -- "3. Parse & Validate" --> UI
+```
+
+### Data Flow Overview
+
+1. **Client Interaction:** The user inputs their desired destination, trip duration (1-10 days), and preferred travel vibes via the responsive Next.js frontend.
+2. **Server Action:** The request is securely passed to a Next.js Server Action (`actions.ts`), ensuring API keys are never exposed to the client.
+3. **Context Gathering:** The server queries the Open-Meteo API for real-time weather conditions at the destination to provide context.
+4. **AI Generation:** A highly engineered prompt—incorporating the user's inputs and current weather—is sent to the Google Gemini 2.5 Flash model. The prompt enforces a strict JSON schema output.
+5. **Rendering:** The server parses the returned JSON into strictly typed TypeScript interfaces (`TripPlan`) and sends the structured data back to the client for immediate rendering.
