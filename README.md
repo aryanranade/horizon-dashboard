@@ -1,6 +1,5 @@
 <div align="center">
-  <img src="public/favicon.ico" alt="Logo" width="80" height="80">
-  <h1 align="center">Horizon</h1>
+  <h1 align="center">🌅 Horizon</h1>
   <p align="center">
     <strong>Discover your next adventure with AI-powered intelligence.</strong>
     <br />
