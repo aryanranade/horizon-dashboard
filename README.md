@@ -103,17 +103,17 @@ graph TD
     classDef external fill:#020617,stroke:#10B981,stroke-width:2px,color:#fff;
 
     %% Nodes
-    subgraph Client [Client-Side (React UI)]
+    subgraph Client
         UI[Glassmorphic Dashboard]:::client
         State[React State & Hooks]:::client
     end
 
-    subgraph Server [Server-Side (Next.js Actions)]
+    subgraph Server
         Action[actions.ts]:::server
         Prompt[AI Prompt Engineering]:::server
     end
 
-    subgraph External [External APIs]
+    subgraph External
         Meteo[Open-Meteo API]:::external
         Gemini[Google Gemini 2.5]:::external
     end
